@@ -1,2 +1,2 @@
-RUN nginx
+FROM nginx
 EXPOSE 80
