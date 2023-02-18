@@ -1,2 +1,2 @@
-FROM centos
-RUN echo "sunil vats" >>/tmp/tem.txt
+FROM nginx
+EXPOSE 80
