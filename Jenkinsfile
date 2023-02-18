@@ -11,7 +11,7 @@ pipeline{
 		stage('Build') {
 
 			steps {
-				sh 'docker build -t vatss90/nginx:ver3 .'
+				sh 'docker build -t vatss90/nginx:ver4 .'
 			}
 		}
 
