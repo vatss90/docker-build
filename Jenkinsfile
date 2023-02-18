@@ -25,7 +25,19 @@ pipeline{
 		stage('Push') {
 
 			steps {
-				sh 'docker push vatss90/nginx:ver3'
+				sh 'docker push vatss90/nginx:ver4'
+			}
+		}
+		stage('Pull') {
+
+			steps {
+				sh 'docker pull vatss90/nginx:ver4'
+			}
+		}
+		stage('deploy') {
+
+			steps {
+				sh 'docker run -itd -p 8082:80 --name sunil vatss90/nginx:ver4'
 			}
 		}
 	}
