@@ -1,2 +1,3 @@
-FROM nginx
-EXPOSE 80
+FROM centos:7
+RUN echo "shanvi " >>/tmp/Sunil.txt
+
