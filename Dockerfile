@@ -1,3 +1,2 @@
-FROM nginx
-EXPOSE 80
-MAINTAINER owner="sunilvatsa" 
+FROM centos
+RUN echo "sunil vats" >>/tmp/tem.txt
