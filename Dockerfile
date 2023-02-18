@@ -1,3 +1,3 @@
-FROM nginx
+FROM httpd
 EXPOSE 80
 
