@@ -37,7 +37,7 @@ pipeline{
 		stage('deploy') {
 
 			steps {
-				sh 'docker run -itd -p 8083:80 --name sunil vatss90/nginx:ver5'
+				sh 'docker run -itd  --name sunil1 vatss90/nginx:ver5'
 			}
 		}
 	}
